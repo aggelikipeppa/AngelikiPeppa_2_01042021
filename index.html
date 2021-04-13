@@ -31,12 +31,6 @@
                             </ul>
                         </nav>
                     </div>
-
-
-                    <div class="header_title" id="title">
-                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                        <p>En plein centre ville ou en pleine nature</p>
-                    </div>
                 
 
                  </div>
@@ -45,18 +39,36 @@
             <!--la partie de la recherche-->
 
             <main>
+
+                <div>
+                    <h2 class="title_1">Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p class="subtitle">En plein centre ville ou en pleine nature</p>
+                </div>
+
                 <div id="search">
 
+                    <div class="icon_info">
+                        <!--Je verifie le code pour faire entrer le i-->
+                        <a href="map-marker-alt-solid.svg"> <i class="fas fa-map-marker-alt"></i></a>
+                    </div>
+
                     <form class="search-form">
-
-                        <!--Je dois revoir le symbol gps-->
-
-                        <i class="gps"><a href="images/logo/map-marker-alt-solid.svg"></a></i>
-                        <input class="cities" id="search_site" value="Marseille, France">
-                        <button class="button">
-                            <span>Rechercher</span>
-                        </button>
+                        <input class="cities" type="text" placeholder="Marseille, France">
+                        <button class="search_button">Rechercher</button>
                     </form>
+
+
+                    <div id="filters">
+                        <h3 class="title_2">Filtres</h3>
+
+                        <ul class="filter-boxes">
+                            <li class="filter_money"> <i class="fas fa-money-bill-wave"></i> Economique </li>
+                            <li class="filter_family"> <i class="fas fa-child"></i> Familial </li>
+                            <li class="filter_love"> <i class="fas fa-heart"></i> Romantique </li>
+                            <li class="filter_animals"> <i class="fas fa-dog"></i> Animaux autorisés </li>
+                        </ul>
+
+                    </div>
 
                     
                 </div>
