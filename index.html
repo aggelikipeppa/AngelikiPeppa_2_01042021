@@ -4,6 +4,7 @@
 
 	<head>
 		<meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
         <script src="https://kit.fontawesome.com/e556cf579d.js" crossorigin="anonymous"></script>
 		<title>Reservia</title>
 	</head>
@@ -12,7 +13,7 @@
     <body>
         <div id="block_page">
 
-            <!--Latête de la page-->
+            <!--La tête de la page-->
 
             <header>
                 <div id="en_tete">
@@ -24,13 +25,13 @@
                     <div id="menu">
                         <nav>
                             <ul class="nav_links">
-                                <li id="#hotels">
+                                <li id="nav-hotels">
                                     <a href="#">Hébergements</a>
                                 </li>
-                                <li id="#activities">
+                                <li id="nav-activities">
                                     <a href="#">Activités</a>
                                 </li>
-                                <li id="login">
+                                <li id="nav-login">
                                     <a href="#">S'inscrire</a>
                                 </li>
                             </ul>
@@ -42,7 +43,7 @@
 
            
 
-            <main>
+        <main>
 
             <!--Section_1 la partie de la recherche-->
             <section class="after_header">
@@ -55,8 +56,8 @@
 
                 <div id="search">
 
-                    <div class="icon_gps">
-                        <a href="map-marker-alt-solid.svg"> <i class="fas fa-map-marker-alt"></i></a>
+                    <div class="search_box">
+                        <i class="fas fa-map-marker-alt"></i>
                         <input class="cities" type="text" placeholder="Marseille, France">
                         <button class="search_button">Rechercher</button>
                     </div>
@@ -82,160 +83,280 @@
             </section>
 
 
-            <!--Section 2 accomondation-->
+            <!--Section 2 accomondation ou container?-->
 
-            <Section id="bloc_hotels">
+        <Section class="accomodation">
 
                 <div class="title_3">
                     <h1 class="hotels"> Hébergements à Marseille </h1>
                 </div>
 
-
+            <div id="hotel_blocs">
                 <div class="room_bloc" id="room_1">
-                    <a class="hotelcard" href="#">
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" 
-                        style=»width:128px;height:128px;/>
-                        <!--Je mes le style avec les dimensions à CSS-->
+                    <a href="#" class="hotelcard">
+                        <figure>
+                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"style=»width:128px;height:128px;/>
+                                <!--Je mes le style avec les dimensions à CSS-->
 
-                        <div class="details_room_1">
-                            <p class="nom_room_1">Auberge le Cannebière</p>
-                            <p class="price_room_1">Nuit à partir de <strong class="price">25€</strong></p>
-                        </div>
+                                <figcaption>
+                                    <div class="details_room_1">
+                                    <p class="nom_room_1">Auberge le Cannebière</p>
+                                    <p class="price_room_1">Nuit à partir de <strong class="price">25€</strong></p>
+                                    </div>
 
-                        <div class="stars">
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star empty"></i>
-                        </div>
+                                    <div class="stars">
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    </div>
+                                </figcaption>
+                        </figure>
                     </a>
                 </div>
 
 
                 <div class="room_bloc" id="room_2">
-                    <a class="hotelcard" href="#">
-                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" 
-                        style=»width:128px;height:128px;/>
-                        <!--Je mes le style avec les dimensions à CSS-->
+                    <a href="#" class="hotelcard">
+                        <figure>
+                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" 
+                            style=»width:128px;height:128px;/>
+                            <!--Je mes le style avec les dimensions à CSS-->
 
-                        <div class="details_room_2">
-                            <p class="nom_room_2">Hotel du port</p>
-                            <p class="price_room_2">Nuit à partir de <strong class="price">52€</strong></p>
-                        </div>
+                                <figcaption>
+                                    <div class="details_room_2">
+                                    <p class="nom_room_2">Hotel du port</p>
+                                    <p class="price_room_2">Nuit à partir de <strong class="price">52€</strong></p>
+                                    </div>
 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+                                    <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    </div>
+                                </figcaption>
+                        </figure>
                     </a>
                 </div>
 
 
                 <div class="room_bloc" id="room_3">
-                    <a class="hotelcard" href="#">
-                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" 
-                        style=»width:128px;height:128px;/>
-                        <!--Je mes le style avec les dimensions à CSS-->
+                    <a href="#" class="hotelcard">
+                        <figure>
+                            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" 
+                            style=»width:128px;height:128px;/>
+                            <!--Je mes le style avec les dimensions à CSS-->
 
-                        <div class="details_room_3">
-                            <p class="nom_room_3">Hotel Les mouettes</p>
-                            <p class="price_room_3">Nuit à partir de <strong class="price">76€</strong></p>
-                        </div>
+                                <figcaption>
+                                    <div class="details_room_3">
+                                    <p class="nom_room_3">Hotel Les mouettes</p>
+                                    <p class="price_room_3">Nuit à partir de <strong class="price">76€</strong></p>
+                                    </div>
 
-                        <div class="stars">
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star empty"></i>
-                        </div>
+                                    <div class="stars">
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    </div>
+                                </figcaption>
+                        </figure>
                     </a>
                 </div>
 
 
                 <div class="room_bloc" id="room_4">
-                    <a class="hotelcard" href="#">
-                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" 
-                        style=»width:128px;height:128px;/>
-                        <!--Je mes le style avec les dimensions à CSS-->
+                    <a href="#" class="hotelcard">
+                        <figure>
+                            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" 
+                            style=»width:128px;height:128px;/>
+                            <!--Je mes le style avec les dimensions à CSS-->
 
-                        <div class="details_room_4">
-                            <p class="nom_room_4">Hotel de la mer</p>
-                            <p class="price_room_4">Nuit à partir de <strong class="price">46€</strong></p>
-                        </div>
+                                <figcaption>
+                                    <div class="details_room_4">
+                                    <p class="nom_room_4">Hotel de la mer</p>
+                                    <p class="price_room_4">Nuit à partir de <strong class="price">46€</strong></p>
+                                    </div>
 
-                        <div class="stars">
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star empty"></i>
-                            <i class="fas fa-star empty"></i>
-                        </div>
+                                    <div class="stars">
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    </div>
+                                </figcaption>
+                        </figure>
                     </a>
                 </div>
 
 
                 <div class="room_bloc" id="room_5">
-                    <a class="hotelcard" href="#">
-                        <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" 
-                        style=»width:128px;height:128px;/>
-                        <!--Je mes le style avec les dimensions à CSS-->
+                    <a href="#" class="hotelcard">
+                        <figure>
+                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" 
+                            style=»width:128px;height:128px;/>
+                            <!--Je mes le style avec les dimensions à CSS-->
 
-                        <div class="details_room_5">
-                            <p class="nom_room_5">Auberge Le Panier</p>
-                            <p class="price_room_5">Nuit à partir de <strong class="price">23€</strong></p>
-                        </div>
+                                <figcaption>
+                                    <div class="details_room_5">
+                                    <p class="nom_room_5">Auberge Le Panier</p>
+                                    <p class="price_room_5">Nuit à partir de <strong class="price">23€</strong></p>
+                                    </div>
 
-                        <div class="stars">
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star empty"></i>
-                        </div>
+                                    <div class="stars">
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    </div>
+                                </figcaption>
+                        </figure>
                     </a>
                 </div>
 
 
                 <div class="room_bloc" id="room_6">
-                    <a class="hotelcard" href="#">
-                        <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" 
-                        style=»width:128px;height:128px;/>
+                    <a href="#" class="hotelcard">
+                        <figure>
+                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" 
+                            style=»width:128px;height:128px;/>
+                            <!--Je mes le style avec les dimensions à CSS-->
+
+                                <figcaption>
+                                    <div class="details_room_6">
+                                    <p class="nom_room_6">Auberge Le Panier</p>
+                                    <p class="price_room_6">Nuit à partir de <strong class="price">96€</strong></p>
+                                    </div>
+
+                                    <div class="stars">
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    </div>
+                                </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+                <div class="more">
+                    <p>Afficher plus </p>
+                </div>
+        </Section>
+
+
+         <aside class="populare">
+                <div class="title_4">
+                    <h1 class="hotels_pop"> Les plus populaires <i class="fas fa-chart-line"></i> </h1>
+                </div>
+
+                <div class="room_bloc_pop" id="pop_1">
+                    <a href="#" class="hotelcard">
+                        <figure>
+                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" 
+                            style=»width:128px;height:128px;/>
+                            <!--Je mes le style avec les dimensions à CSS-->
+
+                                <figcaption>
+                                    <div class="details_pop_1">
+                                    <p class="nom_pop_1">Hôtel Le soleil du matin</p>
+                                    <p class="price_pop_1">Nuit à partir de <strong class="price">128€</strong></p>
+                                    </div>
+
+                                    <div class="stars">
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    </div>
+                                </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            
+
+                <div class="room_bloc_pop" id="pop_2">
+                    <a href="#" class="hotelcard">
+                        <figure>
+                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau-Chambres d'hôtes" 
+                            style=»width:128px;height:128px;/>
+                            <!--Je mes le style avec les dimensions à CSS-->
+
+                                <figcaption>
+                                    <div class="details_pop_2">
+                                    <p class="nom_pop_2">Au coeur de l'eau <br> Chambres d'hôtes</p>
+                                    <p class="price_pop_2">Nuit à partir de <strong class="price">71€</strong></p>
+                                    </div>
+
+                                    <div class="stars">
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    </div>
+                                </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="room_bloc_pop" id="pop_3">
+                    <a href="#" class="hotelcard">
+                        <figure>
+                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" 
+                            style=»width:128px;height:128px;/>
                         <!--Je mes le style avec les dimensions à CSS-->
 
-                        <div class="details_room_6">
-                            <p class="nom_room_6">Auberge Le Panier</p>
-                            <p class="price_room_6">Nuit à partir de <strong class="price">96€</strong></p>
-                        </div>
+                                <figcaption>
+                                    <div class="details_pop_3">
+                                    <p class="nom_pop_3">Hôtel Tout bleu et Blanc</p>
+                                    <p class="price_pop_3">Nuit à partir de <strong class="price">68€</strong></p>
+                                    </div>
 
-                        <div class="stars">
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                        </div>
+                                    <div class="stars">
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star full"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    </div>
+                                </figcaption>
+                        </figure>
+                    </a>
+                </div>
+        </aside>
+
+        <section class="activities">
+                <div class="title_5">
+                    <h1> Activités à Marseille </h1>
+                </div>
+                <div class="act_1">
+                    <a href="#" class="Vieux port">
+                        <figure>
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port"
+                            style= width:400px; height:700px;>
+                                <figcaption>
+                                    <p>Vieux port</p>
+                                </figcaption>
+                        </figure>
                     </a>
                 </div>
 
 
-                <div class="more">
-                    <p>Afficher plus</p>
-                </div>
-
-
-            </Section>
-
-           
-        
-        
+            </section>
         
         
         </main>
+
 
 
 
