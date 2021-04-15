@@ -1,3 +1,19 @@
+@font-face
+{
+    font-family: "Raleway-Regular";
+    src: url('fonts/Raleway-VariableFont_wght.ttf');
+    src: url('fonts/Raleway-Italic.ttf');
+    src: url('fonts/Raleway-Italic-VariableFont_wght.ttf');
+    src: url('fonts/Raleway-Bold.ttf');
+    src: url('fonts/Raleway-Regular.ttf');
+}
+body
+{
+    font-family: "Raleway-Regular";
+}
+
+
+
 .accomodation, .populare
 {
     background-color: #F2F2F2;
