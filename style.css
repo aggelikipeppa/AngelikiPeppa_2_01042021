@@ -19,13 +19,3 @@ body
     background-color: #F2F2F2;
 }
 
-#hotel_blocs
-{
-
-    display: flex;
-    margin-bottom: 20px;
-}
-.img
-{
-    border-radius: 8px;
-}
