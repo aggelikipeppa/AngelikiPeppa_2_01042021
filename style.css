@@ -14,21 +14,8 @@ body
     background-color: #FFFFFF ;
     font-family: "Raleway", sans-serif;
     color: black;
-    margin: 0;
-}
-
-a{
-    text-decoration: none;
-    color: initial;
-
-}
-
-    /*J'ajoute les dimensions qu'il faut*/
-#block_page
-{
-    width: 1440px;
-    height: ;
-    margin: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 #en_tete
@@ -36,32 +23,49 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 98%;
-    max-width: 1440;
-    margin: 5px;
-    padding: 25px; 
+    padding: 8px; 
+    margin: 3px;
 }
 
-#logo .img
+a
 {
-    padding: 5px;
+    text-decoration: none;
+    color: initial;
+}
+
+    /*J'ajoute les dimensions qu'il faut*/
+#block_page
+{
+
+    margin: 0px;
+}
+
+
+#logo 
+{
+   padding: 0px;
+   margin: 0px;
 
 }
 
-.nav_links
+nav ul
 {
     list-style-type: none;
-    display: flex ;
+    display: flex;
+    
 }
 
-nav ul li
+nav li
 {
-        margin-right: 100px;
+    margin-right: 50px;
 }
 
 nav a
     /*je verifie les tailles font-size et padding*/
 {
+    position: relative;
+    width: 100%;
+    text-align: center;
     font-size: 1.1em;
     color: #000000;
     text-decoration: none;
@@ -70,8 +74,8 @@ nav a
 #nav-login a
         /*je mes en bold s'inscrire*/
 {
-        color: #0065FC;
-        font-weight: bold;
+    color: #0065FC;
+    font-weight: bold;
 }
 
 #nav-hotels a:hover, #nav-activities a:hover
@@ -79,7 +83,6 @@ nav a
    color: #0065FC;
    border-top: 3px solid #0065FC ;
    font-weight: bold;
-  
 }
 
 #after_header
