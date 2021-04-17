@@ -28,43 +28,32 @@ header
 {
     padding: 10px 0px 10px 0px;
 }
+
+
 #en_tete
-{ 
+{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    text-align: center;
+    padding: 25px 0px 15px 0px;
 }
 
-a
+ul
 {
-    text-decoration: none;
-    color: initial;
-}
-
-    /*J'ajoute les dimensions qu'il faut*/
-
-#logo img
-{
-   width: 100px;
-   height: 50px;
-}
-
-nav ul
-{
+    margin: 0px;
+    padding: 0px;
     list-style-type: none;
     display: flex;
-
+    justify-content: right;
+    width: 370px;
 }
-
-#menu
-    /*je verifie les tailles font-size et padding*/
+   
+nav a 
 {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.1em;
+    font-size: 1em;
     color: initial;
     text-decoration: none;
+    margin-right: 15px;
 }
 
 #nav-login a
@@ -80,75 +69,69 @@ nav ul
    font-weight: bold;
 }
 
-#after_header
+#nav-hotels, #nav-activities
 {
-    width: 98%;
-    max-width:
-    margin: 
-    padding: 
-}
-
-#title h2, p
-{
-    /* Je diminue le distance entre le h2 et le p*/
+    margin-right: 50px;
 }
 
 .title1 strong
 {
-    display: block;
-    font-size: 1em;
-    margin-block-start: 0
-    margin-block-end: 
-    margin-inline-start: 
-    margin-inline-end: 
     font-weight: bold;
+    font-size: 1em;
 }
 
-.subtitle
+#title h2.title1
 {
-    font-size: ;
+    margin: 0px;
 }
+
+p.subtitle
+{
+    margin: 5px 0px 20px 0px;
+}
+
 
 #search
 {
     display: block;
-    width: 100%;
-    margin-bottom: 
+    
+    
 }
 
 #search .icon
 {
-    padding: 15px 15px 15px 20px;
+    padding: 15px 30px 15px 20px;
     background-color: #F2F2F2;
     color: #000000;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 1em;
     text-align: center;
-    border-radius: 15px;
-    margin-right: 0px;
 }
 
 .cities
 {
-    color: #000000;
-    width: auto;
-    
-    border: none;
-    padding: 10px;
-    font-size: 1em;
+    color: initial;
+    width: 200px;
+    padding: 15px 20px 15px 20px;
+    font-size: 1.1em;
     font-weight: bold;
-    border-bottom: 1px solid #000000;
-    border-top: 1px solid #000000;
+    border: none;
+    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
 }
 
 .search_button
 {
     background-color: #0065FC;
     color: #FFFFFF;
-    padding: 15px 20px;
-    border-radius: 10px;
-    width: auto;
     font-weight: bold;
-    font: 0.8em sans-serif;
-    
+    padding: 15px 20px 15px 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 150px;
+    border:none;
+    font-size: 0.8em sans-serif;
 }
 
 .search_box
@@ -156,16 +139,3 @@ nav ul
     display: flex;
     flex-wrap: wrap;
 }
-
-.card
-{
-    margin: 30px auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 40px;
-    background-color: aqua;
-}
-
-
-
-
