@@ -14,17 +14,30 @@ body
     background-color: #FFFFFF ;
     font-family: "Raleway", sans-serif;
     color: black;
+    width: 1440px;
+    height: 1884px;
     margin: 0px;
     padding: 0px;
 }
 
+#block_page
+{
+    width: 1344px;
+    height: 1784px;
+}
+
+header
+{
+    width: 1440px;
+}
 #en_tete
 { 
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 8px; 
-    margin: 3px;
+    margin: 500px 0px 0px 48px;
+    padding-top: 0px;
+
 }
 
 a
@@ -34,18 +47,13 @@ a
 }
 
     /*J'ajoute les dimensions qu'il faut*/
-#block_page
-{
 
-    margin: 0px;
-}
 
 
 #logo 
 {
-   padding: 0px;
-   margin: 0px;
-
+   padding: 
+   margin: 
 }
 
 nav ul
@@ -57,7 +65,7 @@ nav ul
 
 nav li
 {
-    margin-right: 50px;
+    
 }
 
 nav a
@@ -81,16 +89,16 @@ nav a
 #nav-hotels a:hover, #nav-activities a:hover
 {
    color: #0065FC;
-   border-top: 3px solid #0065FC ;
+   border-top: 1px solid #0065FC ;
    font-weight: bold;
 }
 
 #after_header
 {
     width: 98%;
-    max-width: 1440;
-    margin: 5px;
-    padding: 25px; 
+    max-width:
+    margin: 
+    padding: 
 }
 
 #title h2, p
@@ -111,11 +119,7 @@ nav a
 
 .subtitle
 {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-size: ;
 }
 
 #search
@@ -132,17 +136,20 @@ nav a
     color: #000000;
     text-align: center;
     border-radius: 15px;
+    margin-right: 0px;
 }
 
 .cities
 {
     color: #000000;
     width: auto;
-    padding: auto;
-    outline: none;
-    border-right;
-    padding: 15px;
-
+    
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
 }
 
 .search_button
@@ -150,11 +157,27 @@ nav a
     background-color: #0065FC;
     color: #FFFFFF;
     padding: 15px 20px;
-    border: none;
     border-radius: 10px;
+    width: auto;
+    font-weight: bold;
+    font: 0.8em sans-serif;
+    
 }
 
+.search_box
+{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.card
+{
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-color: aqua;
+}
 
 
 
