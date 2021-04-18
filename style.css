@@ -140,26 +140,32 @@ p.subtitle
     flex-wrap: wrap;
 }
 
-#icons
+    /*Filtres*/
+
+#filters
 {
     display: flex;
-    justify-content: space-between;
-    width: 840px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    width: 920px;
     height: 50px;
+    justify-content: space-between;
+    margin: 30px 30px 30px 0px;
 }
-
-    /*Filtres*/
 
 .title2
 {
     margin: 5px;
 }
 
+
 #money .fa-money-bill-wave 
 {
     background-color: #DEEBFF;
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
+    margin: 0px;
     width: 25px;
     height: 25px;
     color: #0065FC;
@@ -171,18 +177,313 @@ p.subtitle
 {
     color: initial;
     width: 145px;
-    padding: 0px;
+    padding: 10px;
     font-size: 1.1em;
     font-weight: bold;
     background-color: initial;
     border: none;
-
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
 }
 
 #money 
 {
     display: flex;
     flex-wrap: wrap;
+}
+
+#familly .fa-child 
+{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    color: #0065FC;
+    font-size: 1em;
     align-items: center;
+}
+
+#familly .fam_button
+{
+    color: initial;
+    width: 100px;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: initial;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     
 }
+
+#familly
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#love .fa-heart
+{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    color: #0065FC;
+    font-size: 1em;
+    align-items: center;
+}
+
+#love .heart_button
+{
+    color: initial;
+    width: 145px;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: initial;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+}
+
+#love
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#animals .fa-dog
+{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    color: #0065FC;
+    font-size: 1em;
+    align-items: center;
+}
+
+#animals .dog-button
+{
+    color: initial;
+    width: 238px;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: initial;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+}
+
+#animals
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    /*  Petit info*/
+
+#info .fa-info
+{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    color: #0065FC;
+    border: 2px solid #DEEBFF;
+    background-color: initial;
+    text-align: center;
+}
+
+    /*distance entre p et i?*/
+#info p
+{
+    color: initial;
+    font-size: 1em;
+}
+
+    /*cards pour les hotels*/
+.hotelcard img
+{
+    width: 200px;
+    height: 100px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px ;
+    padding: 0px;
+
+}
+
+#accomondation
+{
+    background-color: #F2F2F2;
+    width: 800px;
+    height: 620px;
+    border-radius: 25px;
+
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 870;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card
+{
+    margin: 30px auto;
+    padding: 5px 5px 20px 5px;
+    width: 200px;
+    height: 150px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    
+    text-align: left;
+    
+}
+.hotelcard
+{
+    text-decoration: none;
+}
+
+.container
+{
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 30%;
+    padding-left: 5px;
+    
+}
+
+.nom_room
+{
+    color: initial;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.price_room
+{
+    color: initial;
+}
+
+.stars
+{
+    color: #0065FC;
+    padding-bottom: 30px;
+}
+
+.stars span
+{
+    color: #F2F2F2;
+}
+
+strong .price
+{
+    font-weight: bold;
+}
+
+.accomondation_container
+{
+    text-align: justify;
+}
+
+
+    /*les hotels populaires*/
+.hotelcard1 img
+{
+    width: 130px;
+    height: 130px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px ;
+    padding: 5px 0px 5px 5px;
+    
+
+}
+
+#populare
+{
+    background-color: #F2F2F2;
+    width: 400px;
+    height: 620px;
+    border-radius: 25px;
+    text-align: justify;
+
+}
+
+.title_4
+{
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.row1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.column1
+{
+    display: flex;
+    justify-content: center;
+}
+.hotelcard1
+{
+    margin: 20px;
+    width: 340px;
+    height: 140px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    display: flex;
+    text-decoration: none;
+}
+    
+section
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#accomondation, #populare
+{
+    text-align: justify;
+
+}
+
+
+
+
+
+
