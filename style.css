@@ -33,7 +33,6 @@ body
     flex-direction: column;
 }
 
-
 header
 {
     padding: 5px 0px 10px 0px;
@@ -85,7 +84,7 @@ nav a
 #nav-hotels a:hover, #nav-activities a:hover
 {
    color: #0065FC;
-   border-top: 3px solid #0065FC ;
+   border-top: 1px solid #0065FC ;
    font-weight: bold;
 }
 
@@ -93,6 +92,37 @@ nav a
 {
     margin-right: 50px;
 }
+
+@media only screen and (max-width: 767px)
+{
+
+    #block_page
+    {
+        width: auto;
+    }
+
+    #en_tete
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo
+    {
+        text-align: left;
+        padding-bottom: 25px;
+    }
+
+
+    #nav-hotels a:hover, #nav-activities a:hover
+    {
+
+        border-bottom: 1px solid #0065FC;
+        border-top: none;
+
+    }
+}
+
 
     /*main*/
 
@@ -108,14 +138,10 @@ main
     font-size: 1em;
 }
 
-#title h2.title1
-{
-    margin: 0px;
-}
-
 p.subtitle
 {
     margin: 5px 0px 20px 0px;
+    font-size: medium;
 }
 
 
@@ -154,6 +180,12 @@ p.subtitle
     border:none;
     font-size: small;
     text-align: center;
+
+}
+
+.fa-search /* icone loupe */
+{
+    visibility: hidden;
 }
 
 .search_box
@@ -161,6 +193,65 @@ p.subtitle
     display: flex;
     flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 767px)
+{
+    main 
+    {
+        width: 75%;
+    }
+    .title1 strong
+    {
+        font-weight: bolder;
+        font-size: 1em;
+    
+        width: 230px;
+    }
+
+    p.subtitle
+    {
+        margin: 5px 0px 20px 0px;
+        font-size: 1em;
+    }
+
+    #search .icon
+    {
+        padding: 25px 20px 20px 20px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .cities
+    {
+    
+        width: 200px;
+        padding: 25px 20px 20px 10px;
+        
+    }
+
+    .search_button
+    {
+        
+        padding: 25px 20px 15px 20px;
+        border-radius: 15%;
+        width: 50px;
+
+    }
+
+    .fa-search
+    {
+        visibility: visible;
+        font-size: 1.5em;
+    }
+
+
+    span 
+    {
+        visibility: hidden;
+    }
+}
+
+
 
     /*Filtres*/
 
@@ -325,7 +416,31 @@ p.subtitle
     flex-wrap: wrap;
 }
 
+
+@media only screen and (max-width: 767px)
+{
+    
+    #filters
+    {
+
+        
+        
+    }
+
+
+
+
+}
+
+
     /*  Petit info*/
+
+#info
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 #info .fa-info
 {
@@ -339,12 +454,11 @@ p.subtitle
     text-align: center;
 }
 
-
-    /*distance entre p et i?*/
 #info p
 {
     color: initial;
     font-size: 1em;
+    padding-left: 10px;
 }
 
     /*cards pour les hotels*/
@@ -550,6 +664,13 @@ strong .price
 #accomondation, #populare
 {
     text-align: justify;
+}
+
+@media only screen and (max-width: 767px)
+{
+
+
+
 }
 
     /*Activités*/
