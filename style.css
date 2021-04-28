@@ -6,27 +6,39 @@
     src: url('fonts/Raleway-Italic-VariableFont_wght.ttf');
     src: url('fonts/Raleway-Bold.ttf');
     src: url('fonts/Raleway-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+    
 }
+
+* 
+{
+    font-family: 'Raleway', Arial, Verdana, sans-serif;
+   
+}
+
 body
 {
     background-color: #FFFFFF ;
     font-family: "Raleway", sans-serif;
     color: black;
-    height: 1884px;
+    
     margin: 0px;
     padding: 0px;
 }
 
 #block_page
 {
-    margin: 0px 48px 0px 48px;
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
+
 
 header
 {
-    padding: 10px 0px 10px 0px;
+    padding: 5px 0px 10px 0px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
@@ -34,6 +46,7 @@ header
 {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     text-align: center;
     padding: 25px 0px 15px 0px;
 }
@@ -47,7 +60,13 @@ ul
     justify-content: right;
     width: 370px;
 }
-   
+
+#menu
+{
+    margin-right: 0px;
+
+}
+
 nav a 
 {
     font-size: 1em;
@@ -60,17 +79,26 @@ nav a
 {
     color: #0065FC;
     font-weight: bold;
+    margin-right: 80px;
 }
 
 #nav-hotels a:hover, #nav-activities a:hover
 {
    color: #0065FC;
-   border-top: 1px solid #0065FC ;
+   border-top: 3px solid #0065FC ;
    font-weight: bold;
 }
 
 #nav-hotels, #nav-activities
 {
+    margin-right: 50px;
+}
+
+    /*main*/
+
+main
+{
+    margin-left: 50px;
     margin-right: 50px;
 }
 
@@ -91,13 +119,6 @@ p.subtitle
 }
 
 
-#search
-{
-    display: block;
-    
-    
-}
-
 #search .icon
 {
     padding: 15px 30px 15px 20px;
@@ -114,7 +135,7 @@ p.subtitle
     color: initial;
     width: 200px;
     padding: 15px 20px 15px 20px;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     border: none;
     border-bottom: 1px solid #F2F2F2;
@@ -129,9 +150,10 @@ p.subtitle
     padding: 15px 20px 15px 20px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    width: 150px;
+    width: 130px;
     border:none;
-    font-size: 0.8em sans-serif;
+    font-size: small;
+    text-align: center;
 }
 
 .search_box
@@ -142,21 +164,23 @@ p.subtitle
 
     /*Filtres*/
 
-#filters
+    #filters
 {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
     width: 920px;
     height: 50px;
-    justify-content: space-between;
     margin: 30px 30px 30px 0px;
 }
 
 .title2
 {
     margin: 5px;
+    font-size: 1.1em;
+    color: initial;
+    font-weight: bold;
 }
 
 
@@ -166,27 +190,26 @@ p.subtitle
     border-radius: 50%;
     padding: 10px;
     margin: 0px;
+    margin-right: 10px;
     width: 25px;
     height: 25px;
     color: #0065FC;
     font-size: 1em;
-    align-items: center;
+    
 }
 
 #money .money_button
 {
     color: initial;
-    width: 145px;
-    padding: 10px;
+    width: 200px;
+    padding: 0px;
+    margin: 0px;
     font-size: 1.1em;
     font-weight: bold;
     background-color: initial;
-    border: none;
-    border-top: 2px solid #F2F2F2;
-    border-bottom: 2px solid #F2F2F2;
-    border-right: 2px solid #F2F2F2;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-radius: 50px;
+    border: 1px solid #DEEBFF;
+    text-align: left;
     
 }
 
@@ -194,6 +217,7 @@ p.subtitle
 {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 #familly .fa-child 
@@ -202,27 +226,27 @@ p.subtitle
     border-radius: 50%;
     padding: 10px;
     margin: 0px;
+    margin-right: 10px;
     width: 25px;
     height: 25px;
     color: #0065FC;
     font-size: 1em;
-    align-items: center;
+    
 }
 
 #familly .fam_button
 {
     color: initial;
-    width: 100px;
-    padding: 10px;
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
     font-size: 1.1em;
     font-weight: bold;
     background-color: initial;
-    border: none;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-radius: 50px;
+    border: 1px solid #DEEBFF;
+    text-align: left;
+    
     
 }
 
@@ -230,6 +254,7 @@ p.subtitle
 {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 #love .fa-heart
@@ -238,28 +263,26 @@ p.subtitle
     border-radius: 50%;
     padding: 10px;
     margin: 0px;
+    margin-right: 10px;
     width: 25px;
     height: 25px;
     color: #0065FC;
     font-size: 1em;
-    align-items: center;
+    
 }
 
 #love .heart_button
 {
     color: initial;
-    width: 145px;
-    padding: 10px;
+    width: 180px;
+    padding: 0px;
+    margin: 0px;
     font-size: 1.1em;
     font-weight: bold;
     background-color: initial;
-    border: none;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    
+    border-radius: 50px;
+    border: 1px solid #DEEBFF;
+    text-align: left;
 }
 
 #love
@@ -274,27 +297,25 @@ p.subtitle
     border-radius: 50%;
     padding: 10px;
     margin: 0px;
+    margin-right: 10px;
     width: 25px;
     height: 25px;
     color: #0065FC;
     font-size: 1em;
-    align-items: center;
 }
 
 #animals .dog-button
 {
     color: initial;
     width: 238px;
-    padding: 10px;
+    padding: 0px;
+    margin: 0px;
     font-size: 1.1em;
     font-weight: bold;
     background-color: initial;
-    border: none;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-radius: 50px;
+    border: 1px solid #DEEBFF;
+    text-align: left;
     
 }
 
@@ -318,6 +339,7 @@ p.subtitle
     text-align: center;
 }
 
+
     /*distance entre p et i?*/
 #info p
 {
@@ -333,7 +355,15 @@ p.subtitle
     border-top-right-radius: 25px;
     border-top-left-radius: 25px ;
     padding: 0px;
+    image-rendering:pixelated;
 
+}
+.title3
+{
+    
+    margin: 30px;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 #accomondation
@@ -352,7 +382,7 @@ p.subtitle
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    width: 870;
+
     margin-bottom: 16px;
     padding: 0 8px;
 }
@@ -360,18 +390,20 @@ p.subtitle
 .card
 {
     margin: 30px auto;
-    padding: 5px 5px 20px 5px;
+    padding: 5px 5px 30px 5px;
     width: 200px;
     height: 150px;
-    border-radius: 25px;
+    border-radius: 30px;
     background-color: #FFFFFF;
     
     text-align: left;
+    box-shadow: 0 0 10px #0000002e;
     
 }
 .hotelcard
 {
     text-decoration: none;
+    
 }
 
 .container
@@ -417,16 +449,22 @@ strong .price
 }
 
 
+.more p
+{
+    padding-left: 3em;
+    font-weight: bold;
+}
+
+
     /*les hotels populaires*/
 .hotelcard1 img
 {
     width: 130px;
     height: 130px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px ;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px ;
     padding: 5px 0px 5px 5px;
-    
-
+    image-rendering:pixelated;
 }
 
 #populare
@@ -434,17 +472,21 @@ strong .price
     background-color: #F2F2F2;
     width: 400px;
     height: 620px;
-    border-radius: 25px;
+    border-radius: 30px;
     text-align: justify;
+    margin-left: 45px;
 
 }
 
-.title_4
+#populare .title_4
 {
-    text-align: left;
-    margin-left: 20px;
 
+    margin-left: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    
 }
+
 
 .row1
 {
@@ -458,32 +500,275 @@ strong .price
     display: flex;
     justify-content: center;
 }
+
 .hotelcard1
 {
     margin: 20px;
     width: 340px;
     height: 140px;
-    border-radius: 25px;
+    border-radius: 30px;
     background-color: #FFFFFF;
+    box-shadow: 0 0 10px #0000002e;
     display: flex;
     text-decoration: none;
 }
-    
-section
+
+.container1
+{   
+    text-align: left;
+    font-size: 0.8em;
+    color: initial;
+    padding-left: 10px;
+} 
+
+.nom_pop
+{
+    color: initial;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+.stars
+{
+    color: #0065FC;
+    padding-bottom: 30px;
+}
+
+.stars span
+{
+    color: #F2F2F2;
+}
+
+#hotels_total
 {
     display: flex;
-    justify-content: space-around;
+    width: 1335px;
 
 }
 
 #accomondation, #populare
 {
     text-align: justify;
+}
+
+    /*Activités*/
+
+    #activities
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    max-width: 1350px;
 
 }
 
+.title_5 h2
+{
+    text-align: left;
+    margin-bottom: 27px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.boxes_activities
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.activity1 img
+{
+    width: 310px;
+    height: 390px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px ;
+    image-rendering:pixelated;
+}
+
+.card_act_1
+{
+    margin: 0px;
+    padding: 0px;
+    width: 310px;
+    height: 440px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #0000002e;
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.activity2 img
+{
+    width: 300px;
+    height: 180px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px ;
+    image-rendering:pixelated;
+}
+
+.card_act_2
+{
+    margin-bottom: 42px;
+    padding: 0px;
+    width: 300px;
+    height: 232px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #0000002e;
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}   
+
+.activity3 img
+{
+    width: 300px;
+    height: 104px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    image-rendering:pixelated;
+
+}
+    
+
+.card_act_3
+{
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #0000002e;
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.activity4 img
+{
+    width: 310px;
+    height: 390px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px ;
+    image-rendering:pixelated;
+}
+
+.card_act_4
+{
+    margin: 0px;
+    padding: 0px;
+    width: 310px;
+    height: 440px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #0000002e;
+    
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 
 
+.activity5 img
+{
+    width: 300px;
+    height: 138px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px ;
+    image-rendering:pixelated;
+}
+
+.card_act_5
+{
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 190px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #0000002e;
+    
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.activity6 img
+{
+    width: 300px;
+    height: 150px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px ;
+    image-rendering:pixelated;
+}
+
+.card_act_6
+{
+
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #0000002e;
+    
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.boxes_activities a
+{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-style: normal;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+.boxes_activities p
+{
+    padding-left: 25px;
+}
 
 
+footer
+{
+    display: flex;
+    width: 1340px;
+    height: 150px;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    justify-content: space-around;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-items: center;
+}
+
+.final
+{
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.final p
+{
+    font-size: 0.8em;
+    font-style: normal;
+
+}
 
