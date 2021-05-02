@@ -249,8 +249,6 @@ p.subtitle
 
 }
 
-
-
     /*Filtres*/
 
  
@@ -668,25 +666,24 @@ strong .price
 
     #populare
     {
-        background-color: #F2F2F2;
-        width: 500px;
+        
+        width: auto ;
         height: 620px;
         border-radius: 0px;
-        
         margin-left: 0px;
-        display: flex;
-        flex-direction: column;
+        margin-bottom: 30px;
+        padding-left: 0px;
     }
 
     .row1
     {
         margin: 0px;
-        padding: 0px;
-        
+        padding: 0px; 
     }
     
     #accomondation
     {
+    
         background-color: #FFFFFF;
         height: 1313px;
         width: 373px;
@@ -939,8 +936,6 @@ strong .price
         margin-left: 0px;
     }
 
-    
-    
     .activity1 img,
     .activity2 img,
     .activity3 img,
@@ -950,7 +945,6 @@ strong .price
     {
         width: 330px;
         height: 130px;
-
     }
 
     .card_act_1,
@@ -991,28 +985,4 @@ strong .price
     font-weight: bolder;
 }
 
-.final p
-{
-    font-size: 0.8em;
-    font-style: normal;
-}
 
-
-@media only screen and (max-width: 500px)
-{
-    footer 
-    {
-        height: 485px;
-        max-width: 500px;
-        background-color: #F2F2F2;
-        margin-top: 0px;
-    }
-        .footer_all
-    {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-left: 20px;
-        padding-top: 45px;
-        padding-left: 20px;
-}
