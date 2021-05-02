@@ -15,26 +15,19 @@
 
             <!--La tête de la page is here-->
 
-            <header>
-                <div id="en_tete">
+            <header id=header>
                     <div id="logo">
                         <img src="images/logo/Reservia.svg" alt="logo_reservia"/>
                     </div>
             
             <!--La création de la navbar-->
-                    <div id="menu">
-                        <nav>
-                            <ul class="nav_links">
-                                <li id="nav-hotels"><a href="#accomondation">Hébergements</a></li>
-                                <li id="nav-activities"><a href="#activities">Activités</a></li>
-                            </ul>
-                            <div id="nav-login">
-                                <a href="#">S'inscrire</a>
-                            </div>
+                    <div class="navtop_bar">
+                        <nav class="navtop_links">
+                            <a class="navtop" href="#accomondation">Hébergements</a>
+                            <a class="navtop" href="#activities_Marseille">Activités</a>
                         </nav>
                     </div>
-                </div>
-                
+                        <a class="nav_login" href="#">S'inscrire</a>
             </header>
 
            
@@ -55,7 +48,7 @@
                    <div class="search_box">
                        <i class="fas fa-map-marker-alt icon"></i>
                        <input class="cities" type="text" value="Marseille, France">
-                       <button class="search_button"><span>Rechercher</span>
+                       <button class="search_button" type="submit"><span>Rechercher</span>
                         <i class="fas fa-search"></i>
                         </button>
                    </div>
@@ -97,9 +90,6 @@
                </div>
                    
                    
-                       
-
-
                <div id="info">
                    <i class="fas fa-info"></i>
                    <p>Plus de 500 logements sont disponibles dans cette ville </p>
@@ -242,8 +232,8 @@
                <div id="populare">
        
                    <div class="title_4">
-                       <h2 class="hotels_pop"> Les plus populaires
-                       <i class="fas fa-chart-line"></i></h2>
+                       <h2 class="hotels_pop"> Les plus populaires</h2>
+                       <i class="fas fa-chart-line"></i>
                    </div>
        
        
@@ -310,74 +300,83 @@
            </section>
 
 
-           <section id="activities">
+           <section class="activities_Marseille">
                <div class="title_5">
                    <h2> Activités à Marseille </h2>
                </div>
 
-                <div class="boxes_activities">
-                <div class="card_act_1">
-                    <a href="#">
-                        <div class=activity1>
-                            <img class="photo_activite1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
-                             <p>Vieux port</p>    
-                         </div>
-                     </a>
-                </div>
+               <div class="activities">
+                <div class="boxes_activities_left">
+                    <div class="card_act_1">
+                        <a href="#">
+                            <div class=activity1>
+                                <img class="photo_activite1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+                                 <p>Vieux port</p>    
+                             </div>
+                         </a>
+                    </div>
                 
-                <div class="activity2_3">
-                <div class="card_act_2">
-                    <a href="#">
-                        <div class="activity2">
-                            <img class="photo_activite2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                            <p>Fort de Pomègues</p>
-                        </div>
-                    </a>
+                    
+                    <div class="activity2_3">
+                    <div class="card_act_2">
+                        <a href="#">
+                            <div class="activity2">
+                                <img class="photo_activite2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                                <p>Fort de Pomègues</p>
+                            </div>
+                        </a>
+                    </div>
+     
+                    <div class="card_act_3">
+                        <a href="#">
+                            <div class="activity3">
+                                <img class="photo_activite3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
+                                <p>Iles du Frioul</p>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
                 </div>
- 
-                <div class="card_act_3">
-                    <a href="#">
-                        <div class="activity3">
-                            <img class="photo_activite3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
-                            <p>Iles du Frioul</p>
-                        </div>
-                    </a>
+
+
+                <div class="boxes_activities_right">         
+                    <div class="card_act_4">
+                        <a href="#">
+                            <div class="activity4">
+                                <img class="photo_activite4" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
+                                <p>Parc national des Calanques</p>
+                            </div>
+                        </a>
+                    </div>
+     
+                    <div class="activity5_6">
+                    <div class="card_act_5">
+                        <a href="#">
+                            <div class="activity5">
+                                <img class="photo_activite5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                                <p>Notre-Dame-de-la-Garde</p>
+                            </div>
+                        </a>
+                    </div>
+     
+                    <div class="card_act_6">
+                        <a href="#">
+                            <div class="activity6">
+                                <img class="photo_activite6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                                <p>Parc Longchamp</p>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
                 </div>
-                </div>
- 
-                <div class="card_act_4">
-                    <a href="#">
-                        <div class="activity4">
-                            <img class="photo_activite4" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
-                            <p>Parc national des Calanques</p>
-                        </div>
-                    </a>
-                </div>
- 
-                <div class="activity5_6">
-                <div class="card_act_5">
-                    <a href="#">
-                        <div class="activity5">
-                            <img class="photo_activite5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                            <p>Notre-Dame-de-la-Garde</p>
-                        </div>
-                    </a>
-                </div>
- 
-                <div class="card_act_6">
-                    <a href="#">
-                        <div class="activity6">
-                            <img class="photo_activite6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                            <p>Parc Longchamp</p>
-                        </div>
-                    </a>
-                </div>
-                </div>
-               </div>       
+
+               </div>    
             </section>
+
             </main>
 
             <footer>
+                <div class="footer_all">
                 <div id="about">
                     <h2 class="final">A propos</h2>
                     <p>Fonctionnement du site</p>
@@ -395,6 +394,7 @@
                     <h2 class="final">Assistance</h2>
                     <p>Centre d'aide</p>
                     <p>Nous contacter</p>
+                </div>
                 </div>
             </footer>
           
