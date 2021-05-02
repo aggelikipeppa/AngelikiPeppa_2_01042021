@@ -24,7 +24,7 @@ body
 
 #block_page
 {
-    max-width: auto;
+    width: auto;
 }
 
 a, a:link 
@@ -32,6 +32,8 @@ a, a:link
     text-decoration: none;
     color: black;
 }
+
+/*La création de la navbar*/
 
 #header 
 {
@@ -59,6 +61,7 @@ a, a:link
     padding: 30px 30px 30px 30px;
     color:#0065fc;
     font-weight: bold;
+    margin-right: 50px;
 }
 
 .navtop_links a:hover
@@ -136,9 +139,12 @@ p.subtitle
     flex-direction: row;    
 }
 
-    /*Filtres*/
+.search_box :hover
+{
+    cursor: pointer;
+}
 
- 
+    /*Les Filtres*/
 
 .all_button
 {
@@ -261,6 +267,17 @@ span .icone
     flex-direction: row;
     align-items: center;
 }
+
+#money :hover,
+#familly :hover,
+#love :hover,
+#animals :hover
+{
+    color: #0065FC;
+    cursor: pointer;
+
+}
+
     /*  Petit info*/
 
 #info
@@ -495,7 +512,7 @@ strong .price
 
     /*Activités*/
 
-.activities_Marseille
+#activities_Marseille
 {
     margin-top: 50px;
     width: 1335px;
@@ -633,7 +650,6 @@ strong .price
 
 .card_act_6
 {
-
     margin: 0px;
     padding: 0px;
     width: 300px;
@@ -736,8 +752,8 @@ footer
     .navtop_links :hover 
     {
         color: #106ffc;
-        border-bottom: 3px #106ffc solid;
-       
+        border-bottom: 3px solid #106ffc;
+
     }
 
     .navtop_links 
@@ -842,7 +858,6 @@ footer
 
     #populare
     {
-        
         width: auto ;
         height: 620px;
         border-radius: 0px;
@@ -859,7 +874,6 @@ footer
     
     #accomondation
     {
-    
         background-color: #FFFFFF;
         height: auto;
         width: auto;
@@ -903,7 +917,7 @@ footer
     /*section Activities*/
 @media only screen and (max-width:767px)
 {
-    .activities_Marseille
+    #activities_Marseille
     {
         width: 375px;
         height: auto;
@@ -1085,7 +1099,7 @@ footer
 /*Tablets*/
 @media (min-width: 768px) and (max-width: 991.98px)
 {
-    .activities_Marseille
+    #activities_Marseille
     {
         width: auto;
         height: auto;
