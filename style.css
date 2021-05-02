@@ -6,13 +6,11 @@
     src: url('fonts/Raleway-Italic-VariableFont_wght.ttf');
     src: url('fonts/Raleway-Bold.ttf');
     src: url('fonts/Raleway-Regular.ttf');
-    
 }
 
 * 
 {
     font-family: 'Raleway', Arial, Verdana, sans-serif;
-   
 }
 
 body
@@ -27,8 +25,6 @@ body
 #block_page
 {
     max-width: auto;
-    
-    
 }
 
 a, a:link 
@@ -72,63 +68,6 @@ a, a:link
    font-weight: bold;
 }
 
-
-
-
-
-    /*Responsive -mobile*/
-@media screen and (max-width: 767px)
-{
-
-    #block_page
-    {
-        width: auto;
-        height: auto;
-    }
-
-    #logo 
-    {
-        margin-left: 20px;
-    }
-
-    #header 
-    {
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-    }
-
-    .navtop 
-    {
-        padding: 16px 16px 16px 16px;
-        width: 50%;  
-        border-bottom: 3px solid #F2F2F2;
-    }
-
-    .navtop_bar 
-    {
-        width:100%;
-        display: flex;
-        order: 3;
-    }
-
-    .navtop_links :hover 
-    {
-        color: #106ffc;
-        border-bottom: 3px #106ffc solid;
-       
-    }
-
-    .navtop_links 
-    {
-        width: 100%;
-        display: flex;
-        border-top: none;
-    }
-}
-
-
     /*main*/
 
 main
@@ -148,7 +87,6 @@ p.subtitle
      margin: 5px 0px 20px 0px;
      font-size: medium;
 }
-    
     
 #search .icon
 {
@@ -198,78 +136,6 @@ p.subtitle
     flex-direction: row;    
 }
 
-
-    /*Mobiles*/
-@media only screen and (max-width: 767px)
-{
-    main 
-    {
-        width: auto;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #after_header
-    {
-        margin-left: 20px;
-        margin-right: 0px;
-    }
-
-    .title1 strong
-    {
-        font-weight: bolder;
-        font-size: 1em;
-        width: 230px;
-    }
-
-    p.subtitle
-    {
-        margin: 5px 0px 20px 0px;
-        font-size: 1em;
-    }
-
-    .search_button
-    {
-        padding: 10px;
-        border-radius: 20%;
-        width: 50px;
-        height: 50px;
-    }
-
-    .fa-search
-    {
-        visibility: visible;
-        font-size: 1.7em;
-        margin: -10px;
-        padding: -10px;
-    }
-
-    .search_button span
-    {
-        visibility: hidden;
-    }
-
-}
-
-/*Tablets*/
-@media (min-width: 768px) and (max-width: 991.98px) 
-{
-    main 
-    {
-        width: auto;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #after_header
-    {
-        margin-left: 20px;
-        margin-right: 0px;
-    }
-}
-
     /*Filtres*/
 
  
@@ -314,7 +180,6 @@ span .icone
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 #money .money_button
@@ -334,8 +199,7 @@ span .icone
     border-right: 2px solid #F2F2F2;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 #familly .fam_button
@@ -356,7 +220,6 @@ span .icone
     display: flex;
     flex-direction: row;
     align-items: center;
-    
 }
 
 #love .heart_button
@@ -379,7 +242,6 @@ span .icone
     align-items: center;
 }
 
-
 #animals .dog-button
 {
     color: initial;
@@ -399,54 +261,6 @@ span .icone
     flex-direction: row;
     align-items: center;
 }
-
-
-@media only screen and (max-width: 767px)
-{
-    
-    #filters
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .all_button
-    {
-        display: flex;
-        flex-wrap: wrap;
-        height: 175px;
-        width: 324px;
-        margin: 0px;
-    }
-    
-}
-
-/*Tablets*/
-@media (min-width: 768px) and (max-width: 991.98px) 
-{
-
-     
-    #filters
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .all_button
-    {
-        display: flex;
-        flex-wrap: wrap;
-        height: 175px;
-        width: 324px;
-        margin: 0px;
-    }
-
-}
-
-
-
     /*  Petit info*/
 
 #info
@@ -477,19 +291,7 @@ span .icone
     padding-left: 10px;
 }
 
-@media only screen and (max-width: 767px)
-{
-    #info
-    {
-        width: 375px;
-        margin-top: 20px;
-        display: flex;
-        align-items:baseline;
-    }
-
-}
-
-    /*cards pour les hotels*/
+    /*cards des hotels*/
 .hotelcard img
 {
     width: 200px;
@@ -498,18 +300,16 @@ span .icone
     border-top-left-radius: 25px ;
     padding: 0px;
     image-rendering:pixelated;
-
 }
+
 .title3
 {
-    
     margin: 30px;
     padding-left: 15px;
     font-size: 1.3em;
     font-weight: bold;
 }
 
-    
 #accomondation
 {
     background-color: #F2F2F2;
@@ -539,12 +339,11 @@ span .icone
     background-color: #FFFFFF;
     text-align: left;
     box-shadow: 0 0 10px #0000002e;
-    
 }
+
 .hotelcard
 {
     text-decoration: none;
-    
 }
 
 .container
@@ -553,7 +352,6 @@ span .icone
     font-size: 0.8em;
     line-height: 30%;
     padding-left: 5px;
-    
 }
 
 .nom_room
@@ -589,7 +387,6 @@ strong .price
     text-align: justify;
 }
 
-
 .more p
 {
     padding-left: 3em;
@@ -616,7 +413,6 @@ strong .price
     height: 620px;
     border-radius: 30px;
     margin-left: 45px;
-    
 }
 
 .hotels_pop
@@ -629,7 +425,6 @@ strong .price
     padding-left: 15px;
     font-size: 1.3em;
     font-weight: bold;
-    
 }
 
 .row1
@@ -637,8 +432,7 @@ strong .price
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 25px;
-    
+    margin-top: 25px; 
 }
 
 
@@ -692,7 +486,6 @@ strong .price
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
 
 #accomondation, #populare
@@ -700,146 +493,6 @@ strong .price
     text-align: justify;
 }
 
-@media only screen and (max-width: 767px)
-{
-
-    #hotels_total
-    {
-        flex-direction:column-reverse;
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    #populare
-    {
-        
-        width: auto ;
-        height: 620px;
-        border-radius: 0px;
-        margin-left: 0px;
-        margin-bottom: 30px;
-        padding-left: 0px;
-    }
-
-    .row1
-    {
-        margin: 0px;
-        padding: 0px; 
-    }
-    
-    #accomondation
-    {
-    
-        background-color: #FFFFFF;
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .title3
-    {
-        margin-left: 20px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    .row
-    {
-        
-        margin-left: 20px;
-        width:374px;
-    }
-
-    .card
-    {
-        margin: 10px;
-        width: 340px;
-        height: 160px;
-    }
-
-    .hotelcard img 
-    {
-        width: 340px;
-        height: 113px;
-    }
-
-    .container
-    {
-        text-align: left;
-        margin-left: 0px;
-    }
-}
-
-
-/*Tablets*/
-@media (min-width: 768px) and (max-width: 991.98px) 
-{
-
-    #hotels_total
-    {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction:column-reverse;
-        margin: 0px;
-    }
-
-    #populare
-    {
-        width: auto ;
-        height: 620px;
-        border-radius: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-        padding: 0px;
-        
-     }
-
-     .row1
-     {
-         display: flex;
-         align-items: flex-start;
-     }
-     
-     .hotels_pop
-     {
-         display: flex;
-         justify-content: justify;
-         padding: 0px;
-         width: 340px;
-         
-     }
-
-     #accomondation
-     {
-        background-color: white;
-        height: 100%;
-        width: fit-content;
-        padding-left: 0px;
-        margin-left: 0px;
-     }
-
-
-
-     .row
-     {
-        display: flex;
-        justify-content:left;
-        flex-direction: row;
-        margin: 0px;
-     }
-
-     .column
-     {
-        width: 300px;
-        height: 200px;
-        padding-left: 0;
-        margin: 0px
-     }
-
-}
     /*Activités*/
 
 .activities_Marseille
@@ -1004,7 +657,250 @@ strong .price
     padding-left: 25px;
 }
 
+    /*Footer*/
 
+footer
+{
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+
+.footer_bloc 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 1440px;
+    margin-top: 60px;
+    padding: 0 30px;
+}
+
+.footer_elem 
+{
+    width: 30%;
+    line-height: 2em;
+    padding: 30px 30px;
+}
+
+.footer_elem h3
+{
+    font-weight: bold;
+    text-align:start
+}
+
+
+
+/*Responsive-mobile*/
+
+
+@media screen and (max-width: 767px)
+{
+    #block_page
+    {
+        width: auto;
+        height: auto;
+    }
+}
+    /*Header*/
+@media screen and (max-width: 767px)
+{
+    #logo 
+    {
+        margin-left: 20px;
+    }
+
+    #header 
+    {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .navtop 
+    {
+        padding: 16px 16px 16px 16px;
+        width: 50%;  
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .navtop_bar 
+    {
+        width:100%;
+        display: flex;
+        order: 3;
+    }
+
+    .navtop_links :hover 
+    {
+        color: #106ffc;
+        border-bottom: 3px #106ffc solid;
+       
+    }
+
+    .navtop_links 
+    {
+        width: 100%;
+        display: flex;
+    }
+}
+
+        /*Main*/
+@media only screen and (max-width: 767px)
+{
+    main 
+    {
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #after_header
+    {
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+    .title1 strong
+    {
+        font-weight: bolder;
+        font-size: 1em;
+        width: 230px;
+    }
+
+    p.subtitle
+    {
+        margin: 5px 0px 20px 0px;
+        font-size: 1em;
+    }
+
+    .search_button
+    {
+        padding: 10px;
+        border-radius: 20%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .fa-search
+    {
+        visibility: visible;
+        font-size: 1.7em;
+        margin: -10px;
+        padding: -10px;
+    }
+
+    .search_button span
+    {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    #filters
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .all_button
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: 175px;
+        width: 324px;
+        margin: 0px;
+    } 
+}
+
+@media only screen and (max-width: 767px)
+{
+    #info
+    {
+        width: 375px;
+        margin-top: 20px;
+        display: flex;
+        align-items:baseline;
+    }
+}
+
+    /*section accomondation*/
+@media only screen and (max-width: 767px)
+{
+    #hotels_total
+    {
+        flex-direction:column-reverse;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #populare
+    {
+        
+        width: auto ;
+        height: 620px;
+        border-radius: 0px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+        padding-left: 0px;
+    }
+
+    .row1
+    {
+        margin: 0px;
+        padding: 0px; 
+    }
+    
+    #accomondation
+    {
+    
+        background-color: #FFFFFF;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title3
+    {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .row
+    {
+        margin-left: 20px;
+        width:374px;
+    }
+
+    .card
+    {
+        margin: 10px;
+        width: 340px;
+        height: 160px;
+    }
+
+    .hotelcard img 
+    {
+        width: 340px;
+        height: 113px;
+    }
+
+    .container
+    {
+        text-align: left;
+        margin-left: 0px;
+    }
+}
+
+    /*section Activities*/
 @media only screen and (max-width:767px)
 {
     .activities_Marseille
@@ -1071,6 +967,121 @@ strong .price
     }
 }
 
+        /*Footer*/
+
+@media only screen and (max-width: 500px)
+{
+    
+    .footer_bloc {
+        height: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .footer_elem {
+        width: 100%;
+        padding: 1.25em;
+    }    
+}
+
+        /*Responsive pour les Tablets*/
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
+    main 
+    {
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #after_header
+    {
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
+    #filters
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .all_button
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: 175px;
+        width: 324px;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
+
+    #hotels_total
+    {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction:column-reverse;
+        margin: 0px;
+    }
+
+    #populare
+    {
+        width: auto ;
+        height: 620px;
+        border-radius: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+     }
+
+     .row1
+     {
+         display: flex;
+         align-items: flex-start;
+     }
+     
+     .hotels_pop
+     {
+         padding: 0px;
+         width: 310px;
+     }
+
+     #accomondation
+     {
+        background-color: white;
+        height: 100%;
+        width: fit-content;
+        padding-left: 0px;
+        margin-left: 0px;
+     }
+
+     .row
+     {
+        display: flex;
+        justify-content:left;
+        flex-direction: row;
+        margin: 0px;
+     }
+
+     .column
+     {
+        width: 300px;
+        height: 200px;
+        padding-left: 0;
+        margin: 0px
+     }
+
+}
+
 /*Tablets*/
 @media (min-width: 768px) and (max-width: 991.98px)
 {
@@ -1099,61 +1110,6 @@ strong .price
     }
 }
 
-    /*Footer*/
-
-footer
-{
-    background-color: #F2F2F2;
-    width: 100%;
-}
-
-
-.footer_bloc 
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    width: 1440px;
-    margin-top: 60px;
-    padding: 0 30px;
-    
-    
-}
-
-.footer_elem 
-{
-    width: 30%;
-    line-height: 2em;
-    padding: 30px 30px;
-}
-
-.footer_elem h3
-{
-    font-weight: bold;
-    text-align:start
-}
-
-
-    /*MOBILES*/
-
-@media only screen and (max-width: 500px)
-{
-    
-    .footer_bloc {
-        height: 100%;
-        flex-wrap: wrap;
-        padding: 0;
-    }
-
-    .footer_elem {
-        width: 100%;
-        padding: 1.25em;
-    } 
-       
-}
-
-    /*TABLETS*/
 @media (min-width: 768px) and (max-width: 991.98px) 
 {
     .footer_bloc 
@@ -1168,10 +1124,4 @@ footer
         padding: 2em 1.25em;
     }
 }
-}
-
-
-
-
-
 
