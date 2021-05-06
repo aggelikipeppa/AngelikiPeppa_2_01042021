@@ -404,7 +404,6 @@ strong .price {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   padding: 5px 0px 5px 5px;
-  image-rendering: pixelated;
 }
 
 .hotelcard1 {
@@ -504,6 +503,7 @@ strong .price {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   image-rendering: pixelated;
+  object-fit: cover;
 }
 
 .activity2 img {
@@ -512,6 +512,7 @@ strong .price {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   image-rendering: pixelated;
+  object-fit: cover;
 }
 
 .activity3 img {
@@ -520,6 +521,7 @@ strong .price {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   image-rendering: pixelated;
+  object-fit: cover;
 }
 
 .activity5 img {
@@ -528,6 +530,7 @@ strong .price {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   image-rendering: pixelated;
+  object-fit: cover;
 }
 
 .activity6 img {
@@ -536,6 +539,7 @@ strong .price {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   image-rendering: pixelated;
+  object-fit: cover;
 }
 
 .card_act_1,
@@ -872,11 +876,13 @@ footer {
     height: 100%;
     flex-wrap: wrap;
     padding: 0;
+    margin-left: 20px;
   }
 
   .footer_elem {
     width: 100%;
     padding: 20px;
+    font-size: 1em;
   }
 }
 
