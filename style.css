@@ -277,15 +277,7 @@ span .icone {
   padding-left: 10px;
 }
 
-/*cards des hotels*/
-.hotelcard img {
-  width: 200px;
-  height: 100px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
-  padding: 0px;
-  image-rendering: pixelated;
-}
+/*Section 1 hebergement*/
 
 .title3 {
   margin: 30px;
@@ -309,6 +301,15 @@ span .icone {
   align-content: center;
   margin-bottom: 16px;
   padding: 0px;
+}
+
+.hotelcard img {
+  width: 200px;
+  height: 100px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 0px;
+  image-rendering: pixelated;
 }
 
 .card {
@@ -624,6 +625,89 @@ footer {
   text-align: start;
 }
 
+    /*Responsive Petit Mobile*/
+@media only screen and (max-width: 380px) {
+    #block_page {
+      width: auto;
+      height: auto;
+    }
+  
+    main {
+      margin:0px;
+    }
+
+    .title1 strong {
+      font-size: 0.8em;
+    }
+  
+    .cities {
+      width: 140px;
+      padding: 15px 20px 15px 20px;
+      font-size: 0.9em;
+    }
+    
+    .search_button {
+      padding: 15px 20px 15px 20px;
+      width: 50px;
+    }
+
+    #money .money_button {
+      width: 150px;
+      font-size: 1em;
+    }
+      
+    #familly .fam_button {
+      width: 130px;
+      font-size: 1em;
+    }
+      
+    #love .heart_button {
+      width: 180px;
+      font-size: 1em;
+    }
+      
+    #animals .dog-button {
+      width: 220px;
+      font-size: 1em;
+    }
+
+    #filters {
+      width: 375px;
+    }
+
+    #info {
+      width: 100p
+    }
+      
+    #info p {
+      color: initial;
+      font-size: 1em;
+      width: 250px;
+    }
+      
+    #hotels_total {
+      width: 320px;
+    }
+    
+    .hotelcard1 {
+      width: 300px;
+      height: 140px;
+    }
+
+    #accomondation {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 325px
+    }
+    #activities_Marseille{
+      width: 325px;
+      margin-left: 0px;
+      padding-left: 0px;
+
+    }
+
+}
+
 /*Responsive-mobile*/
 
 @media screen and (max-width: 767px) {
@@ -632,6 +716,7 @@ footer {
     height: auto;
   }
 }
+
 /*Header*/
 @media screen and (max-width: 767px) {
   #logo {
@@ -659,13 +744,17 @@ footer {
 
   .navtop_links a:hover {
     color: #106ffc;
+    border-top: hidden;
     border-bottom: 3px solid #0065fc;
-    visibility: hidden;
   }
 
   .navtop_links {
     width: 100%;
     display: flex;
+  }
+
+  .nav_login {
+    margin-right: 0px;
   }
 }
 
@@ -703,13 +792,13 @@ footer {
 
   .fa-search {
     visibility: visible;
-    font-size: 1.7em;
+    font-size: 1.6em;
     margin: 0px;
     padding: 0px;
   }
 
   .search_button span {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -738,7 +827,7 @@ footer {
   }
 }
 
-/*section accomondation*/
+/*section hebergement*/
 @media only screen and (max-width: 767px) {
   #hotels_total {
     flex-direction: column-reverse;
