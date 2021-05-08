@@ -698,9 +698,9 @@ footer {
   }
 
   .title1 strong {
-    font-weight: bolder;
-    font-size: 1em;
-    width: 230px;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: auto;
   }
 
   p.subtitle {
@@ -823,7 +823,6 @@ footer {
 
   .title_5 {
     margin-left: 20px;
-    
   }
 
   .activities {
@@ -1089,7 +1088,8 @@ footer {
     }
 
   .title1 strong {
-    font-size: 0.8em;
+    font-size: 0.7em;
+
   }
 
   .cities {
@@ -1216,7 +1216,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 40px;
   }
 
   .boxes_activities_left {
@@ -1264,7 +1264,7 @@ footer {
 
 .footer_elem {
    width: 100%;
-   padding: 1.25em;
-}
+   padding: 25px;
+  }
 
 }
