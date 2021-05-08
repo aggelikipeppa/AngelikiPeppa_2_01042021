@@ -368,6 +368,16 @@ strong .price {
   font-weight: bold;
 }
 
+.column :hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
 /*les hotels populaires*/
 
 #populare {
@@ -406,6 +416,7 @@ strong .price {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   padding: 5px 0px 5px 5px;
+  image-rendering: pixelated;
 }
 
 .hotelcard1 {
@@ -453,11 +464,21 @@ strong .price {
   text-align: justify;
 }
 
+.column1 :hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
 /*Activités*/
 
 #activities_Marseille {
   margin-top: 50px;
-  width: 1335px;
+  width: auto;
 }
 
 .title5 {
@@ -771,6 +792,11 @@ footer {
     margin-left: 0px;
     margin-bottom: 30px;
     padding-left: 0px;
+  }
+
+  .hotels_pop {
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
 
   .row1 {
