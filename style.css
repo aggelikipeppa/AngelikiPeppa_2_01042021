@@ -79,6 +79,7 @@ p.subtitle {
   font-size: medium;
 }
 
+  /*Le bouton de la recherche*/
 #search .icon {
   padding: 15px 30px 15px 20px;
   background-color: #f2f2f2;
@@ -125,6 +126,7 @@ p.subtitle {
 .search_box :hover {
   cursor: pointer;
 }
+
 
 /*Les Filtres*/
 
