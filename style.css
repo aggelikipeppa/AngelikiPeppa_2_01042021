@@ -932,6 +932,7 @@ footer {
   }
 }
 
+  /*Filtres*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   #filters {
     display: flex;
@@ -947,7 +948,7 @@ footer {
     margin: 0px;
   }
 }
-
+  /*Section 1 hebergement*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   #hotels_total {
     width: auto;
@@ -1016,11 +1017,11 @@ footer {
   }
 }
 
+  /*Activités*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   #activities_Marseille {
     width: auto;
     height: auto;
-
     margin-left: 20px;
   }
 
@@ -1039,6 +1040,7 @@ footer {
   }
 }
 
+  /*Footer*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   footer {
     width: auto;
@@ -1169,7 +1171,7 @@ footer {
     width: 250px;
   }
 
-   /*section hebergement*/ 
+   /*Section Hebergement*/ 
   #hotels_total {
   flex-direction: column-reverse;
   width: 100%;
@@ -1227,7 +1229,7 @@ footer {
   }
 
 
-  /*section Activities*/
+  /*Section Activités*/
 
   #activities_Marseille {
     width: 300px;
@@ -1294,5 +1296,4 @@ footer {
    width: 100%;
    padding: 25px;
   }
-
 }
